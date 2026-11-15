@@ -5,7 +5,7 @@ import path from 'node:path';
 const args=process.argv.slice(2),base=args[args.indexOf('--base')+1]||'/';
 assert(base.startsWith('/')&&base.endsWith('/'),'Use an absolute base ending in /');
 const html=fs.readFileSync('dist/index.html','utf8');
-assert(html.includes('<title>Little Move</title>'));
+assert(html.includes('<title>Bela Motion</title>'));
 const scripts=[...html.matchAll(/src="([^"]+\.js)"/g)].map(m=>m[1]);
 assert(scripts.length>0,'Missing built entry script');
 for(const url of scripts){assert(url.startsWith(base+'assets/'),url+' has the wrong deployment base');assert(fs.existsSync(path.join('dist',url.slice(base.length))));}

@@ -1,4 +1,4 @@
-# Little Move 动效目录
+# Bela Motion 动效目录
 
 2026-11-15：当前目录 296 项、30 个动作分类，包含可预览的帧驱动实现与简短提示词。source 链接用于参考溯源，不是下载上游原版。来源与许可见 THIRD-PARTY-NOTICES.md；验证范围见 docs/RELEASE-CHECK.md。
 

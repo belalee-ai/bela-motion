@@ -1,6 +1,6 @@
 # 持续更新安排
 
-2026-10-21 确认。Little Move 由维护者的 Codex App 定时检查、制作和验收，通过后自动同步至公开仓库与在线网站。
+2026-10-21 确认。Bela Motion 由维护者的 Codex App 定时检查、制作和验收，通过后自动同步至公开仓库与在线网站。
 
 | 项目 | 当前安排 |
 | --- | --- |
@@ -39,7 +39,7 @@
 
 可以对有项目文件和浏览器权限的 AI 助手说：
 
-> 按 Little Move 的 docs/intake/WORKFLOW.md 和 UPDATE-POLICY.md 提前运行一轮补充。
+> 按 Bela Motion 的 docs/intake/WORKFLOW.md 和 UPDATE-POLICY.md 提前运行一轮补充。
 > 不限数量，先对比全部现有动作，再制作和逐项验收。
 > 检查通过后按当前授权发布到 GitHub 和在线网站，并回读上线结果。
 

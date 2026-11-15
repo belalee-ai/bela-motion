@@ -1,6 +1,6 @@
 {
   "generatedAt": "2026-10-21T13:34:52.719Z",
-  "source": "Existing Little Move components with recorded supported color parameters; no image demos; silent full-motion renders. GIFs are display copies at 20fps, not interactive widgets.",
+  "source": "Existing Bela Motion components with recorded supported color parameters; no image demos; silent full-motion renders. GIFs are display copies at 20fps, not interactive widgets.",
   "previews": [
     {
       "code": "017",
@@ -592,7 +592,7 @@
     "fps": 20,
     "width": 1200,
     "height": 748,
-    "bytes": 4876688,
+    "bytes": 4841939,
     "codes": [
       "017",
       "060",

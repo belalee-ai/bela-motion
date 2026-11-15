@@ -1,4 +1,4 @@
-# Little Move 补充工作流
+# Bela Motion 补充工作流
 
 2026-10-21 更新：每 5 天运行一次，每批不设数量上限；通过检查后自动同步至 GitHub 与在线网站。此安排替代此前“只建机制、手动启动”的约定。执行细则与运行条件见 [持续更新安排](UPDATE-POLICY.md)，机器可读策略见 [policy.json](policy.json)。
 
@@ -6,7 +6,7 @@
 
 ## 如何启动
 
-定时任务由维护者的 Codex App 执行；也可以说“按补充机制继续补充 Little Move”，指定类别或原始参考链接。先读取本文件、README、更新安排和当前目录，运行：
+定时任务由维护者的 Codex App 执行；也可以说“按补充机制继续补充 Bela Motion”，指定类别或原始参考链接。先读取本文件、README、更新安排和当前目录，运行：
 
 ```bash
 node scripts/catalog-intake.mjs

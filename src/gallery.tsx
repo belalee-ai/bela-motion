@@ -97,14 +97,14 @@ const App=()=>{
  };
  return <div className="app-shell">
   <aside className="sidebar">
-   <a className="brand" href="#catalog" aria-label="Little Move">Little <br/>Move<span aria-hidden="true">↗</span></a>
+   <a className="brand" href="#catalog" aria-label="Bela Motion">Bela <br/>Motion<span aria-hidden="true">↗</span></a>
    <nav className="collection-nav" aria-label="动效分区">{['全部','基础文字','创意字体','图片与图形','布局','交互','数据'].map(c=><button key={c} aria-pressed={collection===c} onClick={event=>{animateCategory.current=event.detail!==0;switchCollection(c);}}>{c}<span>{String(c==='全部'?CATALOG.length:CATALOG.filter(e=>e.collection===c).length).padStart(2,'0')}</span></button>)}</nav>
    <div className="library-type">按动作查找</div>
    <nav aria-label="动效分类">{categories.map(c=><button key={c} aria-pressed={category===c} onClick={event=>{animateCategory.current=event.detail!==0;setCategory(c);}}>{c==='全部'?'全部分类':c}<span>{String(c==='全部'?collectionItems.length:collectionItems.filter(e=>e.category===c).length).padStart(2,'0')}</span></button>)}</nav>
   <details className="source-details"><summary>参考来源</summary><p>预览为本库实现，源站用于参考；搜索别名表示相近动作。</p><ul>{CATALOG.filter(item=>item.source).map(item=><li key={item.id}><a href={item.source!} target="_blank" rel="noreferrer">{item.code} {item.name} ↗</a></li>)}</ul></details>
   </aside>
   <main id="catalog">
-   <header className="intro"><h1>{category==='全部'?(collection==='创意字体'?'创意字体编排':collection==='基础文字'?'基础文字动效':collection==='全部'?'Little Move':collection):category}</h1><span className="catalog-count">{String(filtered.length).padStart(2,'0')}</span></header>
+   <header className="intro"><h1>{category==='全部'?(collection==='创意字体'?'创意字体编排':collection==='基础文字'?'基础文字动效':collection==='全部'?'Bela Motion':collection):category}</h1><span className="catalog-count">{String(filtered.length).padStart(2,'0')}</span></header>
    <section className="catalog-search" aria-label="查找动效">
     <label className="search-field"><span>搜索</span><input aria-label="搜索动效" placeholder="编号、名称或动作描述" value={query} onChange={e=>setQuery(e.target.value)}/></label>
     <div className={`preview-settings ${settingsMotion?'':'instant-settings'}`} data-open={settingsOpen} ref={settingsRef} onKeyDown={event=>{if(event.key==='Escape'&&settingsOpen){event.stopPropagation();setSettingsMotion(false);setSettingsOpen(false);settingsButtonRef.current?.focus({preventScroll:true});}}}><button className="settings-toggle" ref={settingsButtonRef} aria-expanded={settingsOpen} aria-controls="preview-settings-body" onClick={event=>{setSettingsMotion(event.detail!==0);setSettingsOpen(open=>!open);}}>预览设置<span className="disclosure-symbol" aria-hidden="true"/></button><div className="settings-reveal" id="preview-settings-body" inert={!settingsOpen} aria-hidden={!settingsOpen}><div className="settings-clip"><div className="settings-content">

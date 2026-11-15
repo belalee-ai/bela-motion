@@ -1,4 +1,4 @@
-# Little Move · 动态画廊
+# Bela Motion · 动态画廊
 
 [打开在线动效库 ↗](https://belalee-ai.github.io/bela-motion/) · [返回首页](../README.md) · [001–293 完整目录](../CATALOG.md)
 

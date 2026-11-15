@@ -1,6 +1,6 @@
 <div align="center">
 
-# Little Move
+# Bela Motion
 
 **先看见动作，再把想法说清楚。**
 
@@ -10,13 +10,13 @@
 
 [![原创代码 MIT](docs/images/badge-code.svg)](LICENSE) [![296 个 Demo、30 个分类](docs/images/badge-catalog.svg)](CATALOG.md) [![打开在线体验](docs/images/badge-preview.svg)](https://belalee-ai.github.io/bela-motion/)
 
-[![Little Move 动态总览：乱码解码、充气艺术字、轨迹弹球、钟摆字形、排名竞速和径向频谱](docs/previews/showcase.gif)](https://belalee-ai.github.io/bela-motion/)
+[![Bela Motion 动态总览：乱码解码、充气艺术字、轨迹弹球、钟摆字形、排名竞速和径向频谱](docs/previews/showcase.gif)](https://belalee-ai.github.io/bela-motion/)
 
 *上面会动。六个真实组件的循环预览，点击进入在线版亲手操作。*
 
 </div>
 
-Little Move 把“我想要那种感觉”变成可以指给别人看的动作。做网页、产品原型或视频时，先选一个效果，调整到合适的节奏，再复制编号和提示词；需要精确实现时，可以继续使用仓库中的 React / Remotion 组件。
+Bela Motion 把“我想要那种感觉”变成可以指给别人看的动作。做网页、产品原型或视频时，先选一个效果，调整到合适的节奏，再复制编号和提示词；需要精确实现时，可以继续使用仓库中的 React / Remotion 组件。
 
 ## 先挑一种动作
 
@@ -51,7 +51,7 @@ GIF 由当前组件真实渲染，保留原有运动节奏；为了适合 GitHub
 
 例如，把这段发给 AI 助手或同事：
 
-> 参考 Little Move 的 **053 · 便当格展开**：主内容格展开时，
+> 参考 Bela Motion 的 **053 · 便当格展开**：主内容格展开时，
 > 折线逐点生长，数字累加，百分比与进度同步变化；
 > 完成后平稳收回网格。沿用我的配色和内容。
 

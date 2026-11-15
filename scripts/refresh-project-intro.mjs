@@ -12,14 +12,14 @@ const dest = path.join(root, 'docs/images');
 fs.mkdirSync(dest, {recursive: true});
 const font = "-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif";
 const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="760" viewBox="0 0 1600 760" role="img" aria-labelledby="title desc">
-<title id="title">Little Move · 先看动效，再说需求。</title>
+<title id="title">Bela Motion · 先看动效，再说需求。</title>
 <desc id="desc">${count} 个 Demo、${categories} 个动作分类。覆盖文字、图片与图形、布局、控件和数据，可在线预览、复制提示词、选择音效并调整参数。这是项目介绍图，真实界面见下方截图。</desc>
 <rect width="1600" height="760" fill="#f7f6f2"/>
 <path d="M0 0H1600" stroke="#20211f" stroke-width="12"/>
 <g font-family="${font}" fill="#20211f">
  <rect x="76" y="69" width="48" height="48" rx="13" fill="#20211f"/>
  <path d="M93 82l17 11-17 11z" fill="#f7f6f2"/>
- <text x="143" y="105" font-size="34" font-weight="650" letter-spacing="-1">Little Move</text>
+ <text x="143" y="105" font-size="34" font-weight="650" letter-spacing="-1">Bela Motion</text>
  <text x="77" y="184" font-size="18" fill="#777971" letter-spacing="3">A LIBRARY OF SMALL MOTIONS</text>
  <text x="70" y="292" font-size="76" font-weight="650" letter-spacing="-2">先看动效，</text>
  <text x="70" y="395" font-size="76" font-weight="650" letter-spacing="-2">再说需求。</text>
@@ -42,7 +42,7 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="760" v
  <text x="1227" y="629" font-size="21" fill="#656860">选音色 / 调音量 / 试听</text>
  <path d="M394 567V638M764 567V638M1175 567V638" stroke="#d4d5cd"/>
  <text x="77" y="710" font-size="18" fill="#777971">在线查用 · 固定编号 · React / Remotion 源码复用</text>
- <text x="1523" y="710" text-anchor="end" font-size="18" fill="#777971">little-move</text>
+ <text x="1523" y="710" text-anchor="end" font-size="18" fill="#777971">bela-motion</text>
 </g></svg>\n`;
 fs.writeFileSync(path.join(dest, 'project-intro.svg'), svg);
 function badge(file, label, value, width, split, color) {

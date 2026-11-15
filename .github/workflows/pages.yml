@@ -1,4 +1,4 @@
-name: Publish Little Move
+name: Publish Bela Motion
 
 on:
   push:
