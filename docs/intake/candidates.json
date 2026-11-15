@@ -82,6 +82,20 @@
       "checkedAt": "2026-11-09",
       "license": "Motion+ 会员示例，本轮未核验复用许可。",
       "notes": "实际打开只显示会员预览与登录入口，无法移动光标验证字高适配。等待可公开操作且来源明确的原版参考。"
+    },
+    {
+      "key": "chart-window-zoom",
+      "name": "图表区间缩放",
+      "collection": "数据",
+      "signature": "overview-window-rescaled-chart-domain",
+      "source": "https://echarts.apache.org/examples/en/editor.html?c=area-simple",
+      "status": "accepted",
+      "author": "Apache ECharts",
+      "checkedAt": "2026-11-15",
+      "license": "已核对上游 Apache 2.0 许可。独立实现，另行编写示例数据，使用系统字体。",
+      "licenseUrl": "https://github.com/apache/echarts/blob/master/LICENSE",
+      "notes": "实测拖动两端更换显示时间域，再整体平移同宽区间。主图横轴与数据重新映射，超过 248 范围刷选和 282 波形选区的高亮职责。已收录 296。",
+      "code": "296"
     }
   ]
 }

@@ -4,6 +4,7 @@ import {clamp,cue,easeMove,mod} from './motion.js';
 export const DATA_DEFAULTS={...EXTRA_DATA_DEFAULTS,
  count:{title:'Every visit counts.',dataValues:'38640',dataLabels:'Visits',unit:'visits',accent:'#6958c5',background:'#f1edf8'},
  bars:{title:'Small steps. Real growth.',dataValues:'32,48,41,67,59,86',dataLabels:'Mon,Tue,Wed,Thu,Fri,Sat',unit:'',accent:'#467966',background:'#eef2ea'},
+ 'chart-window':{title:'Weekly traffic',dataValues:'18,21,15,36,39,29,53,49,72,58,65,51,78,70,84,62',dataLabels:'W01,W02,W03,W04,W05,W06,W07,W08,W09,W10,W11,W12,W13,W14,W15,W16',accent:'#08736f',background:'#e6efed'},
  line:{title:'Follow the momentum.',dataValues:'18,29,24,51,45,72,88',dataLabels:'Mon,Tue,Wed,Thu,Fri,Sat,Sun',unit:'',accent:'#5968c5',background:'#edf0f8'},
  donut:{title:'A whole, in parts.',dataValues:'42,28,18,12',dataLabels:'Direct,Search,Social,Other',unit:'%',accent:'#d67d55',background:'#f6efe7'},
  ranking:{title:'A changing leaderboard.',dataValues:'68,93,57,81',dataStartValues:'67,41,58,49',dataLabels:'Studio A,Studio B,Studio C,Studio D',unit:'pts',accent:'#6861c5',background:'#efedf7'},
@@ -18,15 +19,15 @@ export function parseValues(raw){const tokens=String(raw??'').trim().split(/[,�
 export function validateValues(kind,values){
  if(!values||values.length<1)return '请输入用逗号分隔的有限数字。';
  if(values.some(v=>Math.abs(v)>999999999))return '单项数值请保持在正负999999999以内。';
- const limits={gauge:1,flipcount:1,bubble:5,scatter:5,lollipop:5,diverging:5,multiring:3,radar:6};
+ const limits={'chart-window':32,gauge:1,flipcount:1,bubble:5,scatter:5,lollipop:5,diverging:5,multiring:3,radar:6};
  const max=limits[kind]??(kind==='heatmap'?28:['count','milestone'].includes(kind)?1:kind==='ranking'?5:kind==='donut'?5:7);
  if(values.length>max)return '此项最多支持'+max+'个数值。';
- if(!['count','waterfall','diverging'].includes(kind)&&values.some(v=>v<0))return '此图使用非负数值。';
+ if(!['count','waterfall','diverging','chart-window'].includes(kind)&&values.some(v=>v<0))return '此图使用非负数值。';
  if(['count','flipcount'].includes(kind)&&!Number.isInteger(values[0]))return '数字计数器请填写整数。';
  if(['milestone','gauge','multiring'].includes(kind)&&values.some(v=>v>100))return '进度请填写0至100。';
  if(['donut','treemap'].includes(kind)&&values.reduce((a,b)=>a+b,0)<=0)return '环图的数值总和需要大于0。';
  if(kind==='radar'&&values.length<3)return '雷达图至少需要三个维度。';
- if(['area','line'].includes(kind)&&values.length<2)return '折线图至少需要两个数据点。';
+ if(['area','line','chart-window'].includes(kind)&&values.length<2)return '折线图至少需要两个数据点。';
  if(kind==='waterfall'&&values.length<2)return '瀑布图需要起始值及至少一个增减值。';
  return '';
 }

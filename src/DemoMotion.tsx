@@ -1,3 +1,4 @@
+import {ChartWindow} from './intake-studies/ChartWindow';
 import {ScrollHeader} from './intake-studies/ScrollHeader';
 import {DirectionOverlay} from './intake-studies/DirectionOverlay';
 import {ScrollGrainScene,MagneticGridScene} from './intake-studies/Scenes';
@@ -60,7 +61,8 @@ export const DemoMotion:React.FC<DemoProps>=props=>{
   scene=<>{[-1,0,1,2,3].map(i=>{const distance=Math.abs(i-s.index),focus=1-clamp(distance),x=243+(i-s.index)*334,y=65+(1-focus)*13-s.grab*10*focus,scale=.88+.12*focus+s.grab*.025*focus;return panel(i+3,x,y,314,344,{overflow:'visible',background:'transparent',transform:`translate3d(${x}px,${y}px,0) rotate(${clamp(s.vx,-2,2)*-2*focus}deg) scale(${scale})`,willChange:'transform',boxShadow:'0 18px 30px #00000018'},<div style={{...box,inset:0,borderRadius:16,background:'#f6f6f7',padding:10}}><div style={{height:324,borderRadius:8,overflow:'hidden',background:themes[mod(i,3)]}}>{image(mod(i,3))}</div></div>);})}{[0,1,2].map(i=><div key={i} style={{...box,left:363+i*28,top:449,width:7+16*Math.max(0,1-Math.abs(s.index-i)),height:5,borderRadius:8,opacity:.3+.7*Math.max(0,1-Math.abs(s.index-i)),background:'#55585f'}}/>)}{auto&&autoCursor(s.x*800,s.y*500,.65+.35*s.grab,s.grab*.7)}</>;break;}
  }
  if(contentKeys.includes(meta.key))scene=<><NativeScene p={p} s={s} kind={meta.key} auto={auto}/>{auto&&['tilt','magnet'].includes(meta.key)&&autoCursor(s.x*800,s.y*500,s.gain,0)}</>;
- if(isDataDemo(p.demo)&&!BATCH_DATA_KEYS.includes(meta.key))scene=Object.hasOwn(EXTRA_DATA_DEFAULTS,meta.key)?<ExtraDataScene p={p} frame={frame} fps={fps} kind={meta.key}/>:<DataScene p={p} frame={frame} fps={fps}/>;
+ if(meta.key==='chart-window')scene=<ChartWindow key={String(Boolean(p.native))} p={p} frame={frame} fps={fps}/>;
+ else if(isDataDemo(p.demo)&&!BATCH_DATA_KEYS.includes(meta.key))scene=Object.hasOwn(EXTRA_DATA_DEFAULTS,meta.key)?<ExtraDataScene p={p} frame={frame} fps={fps} kind={meta.key}/>:<DataScene p={p} frame={frame} fps={fps}/>;
  if(BATCH_TEXT_KEYS.includes(meta.key))scene=<BatchTextScene p={p} t={t} kind={meta.key}/>;
  if(BATCH_GRAPHIC_KEYS.includes(meta.key))scene=<BatchGraphicScene p={p} t={t} kind={meta.key}/>;
  if(BATCH_CONTROL_KEYS.includes(meta.key))scene=<BatchControlScene p={p} t={t} kind={meta.key} state={s}/>;

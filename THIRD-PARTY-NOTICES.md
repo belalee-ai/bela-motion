@@ -173,3 +173,7 @@ DIA原站对其工具及输出规定个人探索和教学用途。本批仅链�
 ## 2026-11-09 · 295 滚动显隐导航
 
 295「滚动显隐导航」参考 Nick Williams 的 [Headroom.js 官方演示](https://wicky.nillia.ms/headroom.js/)，上游 [MIT 许可正文](https://github.com/WickyNilliams/headroom.js/blob/master/LICENSE) 已于 2026-11-09 核验。本项目用原生滚动、帧函数与 React 独立实现。图形由组件直接绘制，字形使用系统 Arial，无新增字体文件、图片、音频或依赖。
+
+## 2026-11-15 · 296 图表区间缩放
+
+296「图表区间缩放」独立实现概览与主图联动。样本数据由本项目编写，图表直接绘制，文字使用系统 Arial。参考了 Apache ECharts 的区间拖动和缩放交互，未采用上游代码、字体、图片、音频或依赖。[官方演示](https://echarts.apache.org/examples/en/editor.html?c=area-simple) · [Apache 2.0 许可](https://github.com/apache/echarts/blob/master/LICENSE)

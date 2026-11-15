@@ -2,7 +2,7 @@
 
 2026-10-21 更新：每 5 天运行一次，每批不设数量上限；通过检查后自动同步至 GitHub 与在线网站。此安排替代此前“只建机制、手动启动”的约定。执行细则与运行条件见 [持续更新安排](UPDATE-POLICY.md)，机器可读策略见 [policy.json](policy.json)。
 
-当前正式目录 **295 项、30 类**，下一编号 **296**。执行时以源码和盘点脚本结果为准，不把这里的数字当成固定限额。本文件只维护本项目，不改全局记忆或个人剪辑 Skill。
+当前正式目录 **296 项、30 类**，下一编号 **297**。执行时以源码和盘点脚本结果为准，不把这里的数字当成固定限额。本文件只维护本项目，不改全局记忆或个人剪辑 Skill。
 
 ## 如何启动
 
@@ -59,6 +59,8 @@ node scripts/refresh-project-intro.mjs
 294 的专项检查为 `node scripts/check-direction-overlay.mjs`，阶段帧与完整视频为 `node scripts/render-direction-overlay.mjs`。
 
 295 的专项检查为 `node scripts/check-scroll-header.mjs`，完整视频和减少动态效果帧由 `node scripts/render-scroll-header.mjs` 输出。
+
+296 的专项检查为 `node scripts/check-chart-window.mjs`，完整视频与带正负值的减少动态效果帧由 `node scripts/render-chart-window.mjs` 输出。
 
 已有入口包括 `check-motion.mjs`、`check-studies.mjs`、`check-data.mjs`、`check-expansion.mjs`、`check-batch.mjs`、`check-verification.mjs`、`check-voice-ui.mjs`、`check-coverage-quality.mjs`、`check-original-quality.mjs`；按变更范围选用。阶段渲染脚本也按对应模块选择，不能把旧脚本的覆盖范围当成新增项已验证。
 

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-09T10:08:16.611Z",
+  "generatedAt": "2026-11-15T10:11:20.822Z",
   "schedule": "codex-desktop-heartbeat",
   "schedulePolicy": {
     "provider": "codex-desktop-heartbeat",
@@ -11,9 +11,9 @@
   "quantityLimit": null,
   "minimumAccepted": 0,
   "publishMode": "auto-publish",
-  "implemented": 295,
+  "implemented": 296,
   "categories": 30,
-  "nextCode": "296",
+  "nextCode": "297",
   "candidates": [
     {
       "key": "adaptive-caret-height",
@@ -33,7 +33,8 @@
     "image-scroll-grain",
     "magnetic-grid-detail",
     "direction-aware-overlay",
-    "scroll-direction-header"
+    "scroll-direction-header",
+    "chart-window-zoom"
   ],
   "counts": {
     "discovered": 1
