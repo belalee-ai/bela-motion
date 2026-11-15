@@ -6,11 +6,11 @@
 
 296 个可预览、可调参的动效 Demo，覆盖文字、图片、布局、控件与数据。
 
-[**打开在线动效库 ↗**](https://belalee-ai.github.io/little-move/)　·　[动态画廊](docs/GALLERY.md)　·　[完整目录](CATALOG.md)　·　[本地运行](docs/GETTING-STARTED.md)
+[**打开在线动效库 ↗**](https://belalee-ai.github.io/bela-motion/)　·　[动态画廊](docs/GALLERY.md)　·　[完整目录](CATALOG.md)　·　[本地运行](docs/GETTING-STARTED.md)
 
-[![原创代码 MIT](docs/images/badge-code.svg)](LICENSE) [![296 个 Demo、30 个分类](docs/images/badge-catalog.svg)](CATALOG.md) [![打开在线体验](docs/images/badge-preview.svg)](https://belalee-ai.github.io/little-move/)
+[![原创代码 MIT](docs/images/badge-code.svg)](LICENSE) [![296 个 Demo、30 个分类](docs/images/badge-catalog.svg)](CATALOG.md) [![打开在线体验](docs/images/badge-preview.svg)](https://belalee-ai.github.io/bela-motion/)
 
-[![Little Move 动态总览：乱码解码、充气艺术字、轨迹弹球、钟摆字形、排名竞速和径向频谱](docs/previews/showcase.gif)](https://belalee-ai.github.io/little-move/)
+[![Little Move 动态总览：乱码解码、充气艺术字、轨迹弹球、钟摆字形、排名竞速和径向频谱](docs/previews/showcase.gif)](https://belalee-ai.github.io/bela-motion/)
 
 *上面会动。六个真实组件的循环预览，点击进入在线版亲手操作。*
 
@@ -24,24 +24,24 @@ Little Move 把“我想要那种感觉”变成可以指给别人看的动作�
 
 | 缩写与释义 | 反向字带 |
 | --- | --- |
-| [![046 缩写展开与释义：字母放大重排，解释词沿对应字母展开](docs/previews/monogram.gif)](https://belalee-ai.github.io/little-move/) | [![047 反向字带：上下文字反向运动，连续切换字形](docs/previews/bands.gif)](https://belalee-ai.github.io/little-move/) |
+| [![046 缩写展开与释义：字母放大重排，解释词沿对应字母展开](docs/previews/monogram.gif)](https://belalee-ai.github.io/bela-motion/) | [![047 反向字带：上下文字反向运动，连续切换字形](docs/previews/bands.gif)](https://belalee-ai.github.io/bela-motion/) |
 | **046 · 缩写展开与释义** — 字母放大重排，释义逐字展开。 | **047 · 反向字带** — 上下反向运动，连续切换字形。 |
 
 | 立体几何 | 图表关系 |
 | --- | --- |
-| [![125 立方错层：等距立方块错拍升降，形成流动的立体阶梯](docs/previews/cube-layers.gif)](https://belalee-ai.github.io/little-move/) | [![155 流量汇聚：蓝色流带按来源和去向逐条绘出](docs/previews/sankey.gif)](https://belalee-ai.github.io/little-move/) |
+| [![125 立方错层：等距立方块错拍升降，形成流动的立体阶梯](docs/previews/cube-layers.gif)](https://belalee-ai.github.io/bela-motion/) | [![155 流量汇聚：蓝色流带按来源和去向逐条绘出](docs/previews/sankey.gif)](https://belalee-ai.github.io/bela-motion/) |
 | **125 · 立方错层** — 立方块错拍升降，顶面与侧面连续相接。 | **155 · 流量汇聚** — 带宽与流量对应，节点与流带共同出现。 |
 
 | 滚动声谱 | 节拍轨道 |
 | --- | --- |
-| [![278 滚动声谱：频带矩阵连续滚动，游标标记播放位置](docs/previews/spectrogram.gif)](https://belalee-ai.github.io/little-move/) | [![279 节拍轨道：拍点沿时间轴移动，当前节拍点亮](docs/previews/beat-track.gif)](https://belalee-ai.github.io/little-move/) |
+| [![278 滚动声谱：频带矩阵连续滚动，游标标记播放位置](docs/previews/spectrogram.gif)](https://belalee-ai.github.io/bela-motion/) | [![279 节拍轨道：拍点沿时间轴移动，当前节拍点亮](docs/previews/beat-track.gif)](https://belalee-ai.github.io/bela-motion/) |
 | **278 · 滚动声谱** — 强弱变化形成滚动矩阵，游标保留播放位置。 | **279 · 节拍轨道** — 拍点沿时间轴移动，当前节拍点亮。 |
 
 **[继续看动态画廊：另外 13 个文字、图形、交互与图表循环 →](docs/GALLERY.md)**
 
 本次展示共选 **25 个不同编号**：总览 6 个、首页卡片 6 个、画廊 13 个，三处互不重复，不含图片展示动效。配色采用现有组件参数，设置记录在 [预览清单](docs/previews/manifest.json)。网站默认配色可能不同，动作机制一致。
 
-GIF 由当前组件真实渲染，保留原有运动节奏；为了适合 GitHub 阅读，缩小为 20fps、静音循环展示。真实交互、音效与完整预览请[打开在线版](https://belalee-ai.github.io/little-move/)，搜索图中的固定编号。静态截图另用于说明操作入口。
+GIF 由当前组件真实渲染，保留原有运动节奏；为了适合 GitHub 阅读，缩小为 20fps、静音循环展示。真实交互、音效与完整预览请[打开在线版](https://belalee-ai.github.io/bela-motion/)，搜索图中的固定编号。静态截图另用于说明操作入口。
 
 ## 看 → 调 → 用
 
@@ -90,20 +90,20 @@ GIF 由当前组件真实渲染，保留原有运动节奏；为了适合 GitHub
 
 ## 两种用法
 
-**直接查用**　[打开网站](https://belalee-ai.github.io/little-move/)，无需注册或安装。选动作、调参数、复制提示词，适合原型沟通、网页开发、视频分镜与剪辑参考。
+**直接查用**　[打开网站](https://belalee-ai.github.io/bela-motion/)，无需注册或安装。选动作、调参数、复制提示词，适合原型沟通、网页开发、视频分镜与剪辑参考。
 
 **放进自己的项目**　克隆源码后，可以修改组件、替换自己的素材，或通过 Remotion 导出视频。安装、定制与导出步骤见[使用指南](docs/GETTING-STARTED.md)。
 
 ```bash
-git clone https://github.com/belalee-ai/little-move.git
-cd little-move
+git clone https://github.com/belalee-ai/bela-motion.git
+cd bela-motion
 npm ci
 npm run dev -- --port 3108
 ```
 
 需要 Node.js 22.12+ 和 npm，本项目实测 Node.js 24。也可以直接把这句话发给有终端权限的 AI 助手：
 
-> 请阅读 https://github.com/belalee-ai/little-move 的 README，
+> 请阅读 https://github.com/belalee-ai/bela-motion 的 README，
 > 在新目录安装并启动项目，帮我找到适合当前需求的动效。
 > 修改时沿用原有编号和动作机制。
 
@@ -130,4 +130,4 @@ npm run dev -- --port 3108
 - 自有代码和文档按 [MIT](LICENSE) 提供；字体、摄影与 Remotion 等依赖遵循各自许可，见[许可与素材](docs/LICENSING.md)。
 - 实测范围见[发布检查](docs/RELEASE-CHECK.md)，未声称所有浏览器、设备、参数组合或 Agent 都已完整实测。
 
-发现裁切、卡顿或动作不明显，欢迎[提交 Issue](https://github.com/belalee-ai/little-move/issues)，附上 **编号、浏览器和复现步骤**。推荐新动作时，尽量附原作者 Demo 与素材来源。
+发现裁切、卡顿或动作不明显，欢迎[提交 Issue](https://github.com/belalee-ai/bela-motion/issues)，附上 **编号、浏览器和复现步骤**。推荐新动作时，尽量附原作者 Demo 与素材来源。

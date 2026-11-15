@@ -2,7 +2,7 @@ import {defineConfig} from 'vite';
 import {rmSync} from 'node:fs';
 import {resolve} from 'node:path';
 
-// GitHub Pages uses /little-move/; local development stays at /.
+// GitHub Pages uses /bela-motion/; local development stays at /.
 export default defineConfig({
  base: process.env.DEPLOY_BASE || '/',
  plugins: [{

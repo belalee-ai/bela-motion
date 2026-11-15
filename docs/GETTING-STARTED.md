@@ -1,6 +1,6 @@
 # 安装、定制与视频复用
 
-只想查找动效，可以直接打开 [在线动效库](https://belalee-ai.github.io/little-move/)，无需安装。需要改源码、定制组件或渲染视频时，再使用下方本地开发路径。
+只想查找动效，可以直接打开 [在线动效库](https://belalee-ai.github.io/bela-motion/)，无需安装。需要改源码、定制组件或渲染视频时，再使用下方本地开发路径。
 
 ## 第一次使用
 
@@ -10,15 +10,15 @@
 
 把下面这段直接发给 Codex、Claude Code 或其他有终端权限的助手：
 
-> 请下载 https://github.com/belalee-ai/little-move 到一个新目录。
+> 请下载 https://github.com/belalee-ai/bela-motion 到一个新目录。
 > 先阅读 README，检查 Node.js 版本，再运行 npm ci 和 npm run dev。
 > 打开终端显示的本地地址，不要覆盖已有文件。
 
 也可以自己在终端运行：
 
 ```bash
-git clone https://github.com/belalee-ai/little-move.git
-cd little-move
+git clone https://github.com/belalee-ai/bela-motion.git
+cd bela-motion
 npm ci
 npm run dev -- --port 3108
 ```
@@ -84,9 +84,9 @@ node scripts/chatcut-payload.mjs --effect 008 \
 
 ```bash
 # 本地预览生产构建（保持与 Pages 相同的路径）
-DEPLOY_BASE=/little-move/ npm run build
-node scripts/check-web-build.mjs --base /little-move/
-DEPLOY_BASE=/little-move/ npx vite preview
+DEPLOY_BASE=/bela-motion/ npm run build
+node scripts/check-web-build.mjs --base /bela-motion/
+DEPLOY_BASE=/bela-motion/ npx vite preview
 ```
 
 项目路径由 DEPLOY_BASE 决定，本地开发默认使用 /。字体、图片、音效与动态脚本必须跟随相同路径。Remotion Studio 和视频渲染仍使用自身资源基路径。

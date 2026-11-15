@@ -1,6 +1,6 @@
 # Little Move · 动态画廊
 
-[打开在线动效库 ↗](https://belalee-ai.github.io/little-move/) · [返回首页](../README.md) · [001–293 完整目录](../CATALOG.md)
+[打开在线动效库 ↗](https://belalee-ai.github.io/bela-motion/) · [返回首页](../README.md) · [001–293 完整目录](../CATALOG.md)
 
 这一组选择了 **25 个不同编号、不含图片展示的动效**：首页总览 6 个、首页卡片 6 个，本页再展示另外 13 个，三处互不重复。它们的区别来自动作机制，涵盖文字、几何、布局、控件、图表和声音。
 

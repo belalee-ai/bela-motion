@@ -49,8 +49,8 @@ node scripts/catalog-intake.mjs --file /absolute/path/new-candidates.json
 npm run check
 node scripts/catalog-intake.mjs --check
 node scripts/check-coverage.mjs
-DEPLOY_BASE=/little-move/ npm run build
-node scripts/check-web-build.mjs --base /little-move/
+DEPLOY_BASE=/bela-motion/ npm run build
+node scripts/check-web-build.mjs --base /bela-motion/
 node scripts/refresh-project-intro.mjs
 ```
 
