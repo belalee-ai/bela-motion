@@ -15,7 +15,9 @@
 - 实际播放 8 秒、800×500、60 fps 的 Remotion 视频。查看了全局、缩放、平移、复位和首尾实帧，并抽查带正负值、零基线和长标题的静帧。专项检查覆盖区间边界、等宽平移、零值、真实数据插值与首尾衔接。
 - 自适应文本光标沿用待确认状态，已有来源当前需要会员交互。 [Motion 官方示例](https://examples.motion.dev/react/cursor)
 
-发布状态将在部署和线上回读后记录。
+**已上线，并完成线上回读。** 296 的实现提交为 `fea3695`。仓库迁至 belalee-ai/bela-motion 后，修正了 Pages 的资源路径。品牌统一为 Bela Motion 的提交 `21d09d0` 已完成构建与部署。原 /little-move/ Pages 地址返回 404。 [发布运行](https://github.com/belalee-ai/bela-motion/actions/runs/43703274066)
+
+在新地址核对首页与浏览器标题、296 项计数、实际拖动缩放、提示词复制及同源脚本加载。自动任务也改用新仓库和网址。 [Bela Motion 正式网站](https://belalee-ai.github.io/bela-motion/)
 
 ## 2026-11-09 · 295 滚动显隐导航
 
